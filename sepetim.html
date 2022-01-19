@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.sepetim.com.tr</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+
+
+
+
+
+
+.dıs {
+        width: 100%;
+        height: 700px;
+
+        margin-top: 200px;
+    }
+
+    .ic {
+        width: 30%;
+        height: 600px;
+
+        margin: auto;
+        position: relative;
+        top: 50px;
+    }
+
+    .top {
+        width: 100%;
+        height: 80px;
+
+        margin: auto;
+        position: relative;
+        top: 100px;
+    }
+
+    .bot {
+        width: 100%;
+        height: 80px;
+
+        margin: auto;
+        position: relative;
+        top: 150px;
+    }
+
+    .bottom {
+        width: 100%;
+        height: 80px;
+
+        margin: auto;
+        position: relative;
+        top: 200px;
+    }
+
+    button {
+
+        width: 70%;
+        height: 60px;
+        margin: auto;
+        color: white;
+        background-color: gray;
+        border-radius: 11px;
+        border: 0px solid black;
+
+
+        position: relative;
+        border: 0;
+
+        font: 300 14px 'Open Sans';
+        color: #FFFFFF;
+        padding: 10px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        background: -webkit-linear-gradient(left, #2a83be 0px, #5a5b5c 0);
+        border-radius: 15px;
+       
+
+    }
+
+
+
+    .buton>span>i.fa {
+        margin-right: 20px;
+    }
+
+    .buton>* {
+        position: relative;
+        z-index: 5;
+    }
+
+    .buton-saga:after,
+    .buton-sola:after,
+    .buton-yukari:after,
+    .buton-asagi:after {
+        position: absolute;
+        background: #141516;
+        width: 100%;
+        height: 100%;
+        content: "";
+        -webkit-transition: 1s cubic-bezier(0.165, 0.85, 0.45, 1);
+        transition: 1s cubic-bezier(0.165, 0.85, 0.45, 1);
+    }
+
+    buton-saga:hover:after {
+        left: 0;
+    }
+
+    .buton-saga:after {
+        top: 0;
+        left: -100%;
+    }
+
+    .buton-sola:hover:after {
+        right: 0;
+    }
+
+    .buton-sola:after {
+        top: 0;
+        right: -100%;
+    }
+
+    .buton-yukari:hover:after {
+        bottom: 0;
+    }
+
+    .buton-yukari:after {
+        bottom: -100%;
+        left: 0;
+    }
+
+    .buton-asagi:hover:after {
+        top: 0;
+    }
+
+    .buton-asagi:after {
+        top: -100%;
+        left: 0;
+    }
+
+    .buton-kirmizi {
+        background: -webkit-linear-gradient(left, #c0392b 40px, #e74c3c 0);
+    }
+
+    .buton-kirmizi:after {
+        background-color: #c0392b;
+    }
+
+    .buton-yesil {
+        background: -webkit-linear-gradient(left, #27ae60 40px, #2ecc71 0);
+    }
+
+    .buton-yesil:after {
+        background-color: #27ae60;
+    }
+
+    .buton-sari {
+        background: -webkit-linear-gradient(left, #e67e22 40px, #f39c12 0);
+    }
+
+    .buton-sari:after {
+        background-color: #e67e22;
+    }
+
+
+    /*
+    button:hover {
+        color: black;
+        background-color: rgb(160, 160, 160);
+        border-radius: 11px;
+        border: 0px solid black;
+        transition: all 0.5s ease-out;
+    }
+*/
+    .but {
+        text-align: center;
+
+    }
+
+    .ter {
+        text-align: center;
+
+    }
+
+    .tek {
+        font-size: 60px;
+        margin-top: -20px;
+        color: black;
+    }
+
+    .bop {
+        font-size: 30px;
+        text-align: center;
+        color: black;
+        font-family: sans-serif;
+        margin-top: -60px;
+    }
+
+
+
+    .ust {
+        width: 100%;
+        height: 1px;
+        top: 130px;
+        background-color: rgb(204, 198, 198);
+        position: fixed;
+        z-index: 3;
+
+    }
+
+    body {
+        margin: 0px;
+
+    }
+
+    .navbariii {
+        top: 0px;
+        z-index: 2;
+        width: 100%;
+        height: 130px;
+        background-color: white;
+        box-shadow: 5px 5px 10px gray;
+
+
+        position: fixed;
+    }
+
+    .navbarii {
+        width: 80%;
+        height: 150px;
+
+        position: fixed;
+        left: 10%;
+
+
+
+
+
+    }
+
+    .coksatan h2 {
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 900;
+        font-size: 36px !important;
+
+    }
+
+    .coksatan {
+
+        margin: auto;
+        width: 20%;
+        position: relative;
+        top: 80px;
+        font-weight: 600;
+
+        background-color: white;
+
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+
+    .hr {
+        width: 100%;
+        margin-top: 100px;
+
+        position: absolute;
+        border-bottom: 3px solid rgb(54, 52, 52);
+    }
+
+    .navbariii ul {
+        float: left;
+        margin-left: 20px;
+    }
+
+    .navbariii li {
+        float: left;
+        margin-right: 60px;
+        list-style: none;
+        font-weight: 600;
+        margin-top: -10px;
+        color: black;
+    }
+
+    .navalt {
+        width: 20%;
+        height: 150px;
+
+        float: right;
+    }
+
+    .fm {
+        width: 95% !important;
+    }
+
+    .sepetim {
+        float: left;
+
+        font-size: 20px;
+        position: absolute;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        margin-top: 80px;
+        margin-left: -60px;
+        color: black;
+    }
+
+
+
+    .cesitler li:after {
+        height: 1px;
+        width: 0px;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        content: '';
+        border-radius: 5px;
+        right: 0px;
+        transition: .3s;
+        bottom: -5px;
+
+        box-shadow: 0px 0px 2px black;
+
+
+
+    }
+
+    .cesitler li:hover:after {
+        width: 100%;
+        left: 0px;
+    }
+
+    .search button {
+        position: absolute;
+        float: left;
+        left: 100%;
+        border: 1px solid rgb(209, 213, 214);
+        border-radius: 0px 4px 4px 0px !important;
+        color: rgb(179, 174, 174);
+        background-color: #dddbdb !;
+margin-left: -4px;
+margin-top: 0px;
+
+        width: 40px;
+        height: 38px;
+        font-size: 18px;
+        text-align: center;
+
+    }
+
+
+
+
+
+
+
+    .giris li:hover {
+        transform: scale(1.05, 1.05);
+        color: rgb(71, 71, 71) !important;
+
+
+    }
+
+
+
+
+
+
+
+    .giris li {
+
+        float: left;
+        width: 100%;
+        height: 35px;
+        font-size: 20px;
+
+
+
+        border-radius: 3px;
+
+        border: 1px solid rgba(214, 214, 214, 0.562);
+
+
+        text-align: center;
+
+
+
+
+
+        color: rgb(92, 92, 92);
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    }
+
+    .giris li {
+        text-align: center;
+        margin-right: 30px;
+
+
+    }
+
+    .girisi li {
+        text-align: center;
+        margin-right: 30px;
+
+
+    }
+
+    .div {
+        margin-right: 5px;
+
+    }
+
+    .navbariii li:hover {
+
+        transition: ease-in-out 0.2s;
+        color: rgba(141, 54, 27, 0.925);
+    }
+
+
+    .lo {
+        float: left;
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        width: 20%;
+        margin-right: 10%;
+
+
+
+
+
+    }
+
+
+
+    .div {
+        float: left;
+    }
+
+    .navalt ul {
+        position: relative;
+        top: 80px;
+    }
+
+    .icerikk {
+        position: fixed;
+        top: 80px;
+        left: 22%;
+
+        font-size: 24px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .logo {
+        width: 200px;
+        position: relative;
+        top: -3px;
+
+        height: 130px;
+        float: left;
+    }
+
+    .search {
+        width: 30%;
+        float: left;
+        position: absolute;
+        top: 70px;
+
+        left: 44%;
+    }
+
+
+
+
+    /*Bootstrap footer*/
+    .webintern-footer {
+        background: #444444;
+        position: absolute;
+        top: 1100px;
+        width: 100%;
+
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .webintern-footer-inner {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .webintern-footer-logo {
+        display: inline-block;
+    }
+
+    .webintern-footer .webintern-footer-inner .simple-text p {
+        color: rgb(255, 255, 255);
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .simple-text p {
+        font-size: 15px;
+        color: #dddddd;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    .webintern-footer .webintern-footer-inner .simple-text a {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        color: #f2c21a;
+        font-size: 15px;
+    }
+
+    .footer-2 {
+        padding-left: 55px;
+    }
+
+    .webintern_footer_title {
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+
+    .webintern_footer_title small {
+        font-family: 'Work Sans', sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .webintern_footer_title:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: #f2c21a;
+        margin-top: 15px;
+    }
+
+    .webintern-footer-list {
+        padding: 0;
+
+
+    }
+
+    .webintern-footer-list li {
+        margin-bottom: 17px;
+        list-style: none;
+    }
+
+    .webintern-footer-list a {
+        position: relative;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgb(255, 255, 255);
+        padding-left: 0;
+        letter-spacing: 0.20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer-3 {
+        padding-left: 65px;
+    }
+
+    .webintern-footer-inner .simple-text.last {
+        color: rgb(77, 77, 77);
+        font-size: 17px;
+        font-style: italic;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+
+    .tt-subscribe {
+        position: relative;
+    }
+
+    .tt-subscribe input:not([type="submit"]) {
+        width: 100%;
+        height: 46px;
+        background: rgb(212, 212, 212);
+        font-size: 15px;
+        color: #838486;
+        padding-left: 20px;
+        padding-right: 70px;
+        border: 2px solid rgb(196, 196, 196);
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+
+    }
+
+    .tt-subscribe-submit {
+        background: #ffffff;
+    }
+
+    .tt-subscribe-submit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 52px;
+        height: 46px;
+        font-size: 18px;
+        line-height: 46px;
+        color: #ffffff;
+        text-align: center;
+        background: #dddddd;
+        -moz-border-radius-topright: 3px;
+        border-top-right-radius: 3px;
+        -moz-border-radius-bottomright: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+
+    .tt-subscribe-submit i.fa-envelope:before {
+        content: "\f0e0";
+        position: relative;
+        z-index: 1;
+        color: rgb(255, 255, 255);
+    }
+
+    .tt-subscribe-submit input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #51658d;
+        border: 0;
+    }
+
+    ul.tt-socail {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .tt-socail li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .tt-socail a {
+        display: block;
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+        line-height: 34px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        border: 1px solid rgb(253, 253, 253);
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+    }
+
+    a:hover {
+        color: #0a58ca;
+        transition: all 0.5s ease-out;
+    }
+
+
+
+
+    .webintern_footer_title small {
+        font-family: 'Work Sans', sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .tt-copy {
+        font-size: 15px;
+        line-height: 20px;
+        color: rgb(255, 255, 255);
+        background: #000000;
+        padding: 30px 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .tt-copy-right {
+        text-align: center;
+
+
+    }
+
+    /*Bootstrap footer end*/
+    .footer-2 {
+        position: relative !important;
+        left: 0px !important;
+    }
+
+    .footer-3 {
+        position: relative;
+        left: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+    <div id="ust" class="ust">
+
+
+    </div>
+    <div class="navbariii ">
+        <div class="navbarii">
+            <a class="ana" href="index.html"><img class="logo" src="logo.png" alt=""> </a>
+
+            <div class="icerikk">
+
+                <ul>
+                    <div class="lo"> <a href="erkek.html">
+                            <li>Erkek</li>
+                        </a></div>
+                    <div class="lo"> <a href="kadın.html">
+                            <li>Kadın</li>
+                        </a></div>
+                    <div class="lo"> <a href="cocuk.html">
+                            <li>Çocuk</li>
+                        </a></div>
+
+                </ul>
+            </div>
+            <div class="search">
+                <button><div style="margin-left: -4px;"> <i class="fas fa-search ser"></i></div></button>
+                <input class="form-control  me-2" type="search" placeholder="Aramak istediğiniz gömlek modelini girin"
+                    aria-label="Search">
+            </div>
+
+
+            <div class="navalt">
+
+                <ul>
+                    <div class="div">
+                        <div class="giris girisi"> <a href="giriş.html">
+                                <li>Giriş Yap</li>
+                            </a> </div>
+                    </div>
+
+                    <div class="div">
+                        <div class="giris"> <a class="green" href="kayıt.html">
+                                <li>Üye Ol</li>
+                            </a> </div>
+                    </div>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="dıs">
+        <div class="ic">
+
+            <div class="top">
+                <div class="but"> <a href="index.html">
+
+
+
+                        <button class='buton buton-yukari'>
+                            <span> Alışverişe devam et</span>
+                        </button>
+
+                        <!--   <button onclick="location='/Home/Index'">
+                        <p style="margin-top: 10px; ">
+                            Alışverişe devam et</p>
+                        </button>
+                    -->
+                </div>
+            </div>
+
+            <div class="bot">
+                <div class="ter"><i class="tek fas fa-shopping-cart"></i></div>
+            </div>
+
+            <div class="bottom">
+                <div class="bop">
+                    <p>Alışveriş sepetiniz boş!</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="footer">
+            <footer class="webintern-footer">
+                <div class="webintern-footer-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-0 col-md-0 ">
+                                <a class="webintern-footer-logo" href="#">
+                                    <img class="img-responsive" src="https://www.freelogodesign.org/img/logo-ex-4.png"
+                                        style="width:100px;" alt="">
+                                </a>
+                                <div class="simple-text dark padding-sm">
+                                    <p></p>
+                                </div>
+                                <div class="empty-space xs-25 sm-25"></div>
+                            </div>
+                            <div class="col-sm-6 col-md-2 footer-2">
+                                <!-- webintern_footer_title -->
+                                <h4 class="webintern_footer_title h5"><small>Tarz</small></h4>
+                                <ul class="webintern-footer-list">
+                                    <li><a href="index.html">Ana sayfa</a></li>
+                                    <li><a href="#">Hakkımızda</a></li>
+                                    <li><a href="#"> Hizmetlerimiz</a></li>
+
+                                    <li><a href="#"> Portfolyo</a></li>
+                                    <li><a href="iletişim.html">İletişim</a></li>
+                                </ul>
+                                <div class="empty-space xs-25 sm-25"></div>
+                            </div>
+                            <div class="col-sm-6 col-md-3 footer-3">
+                                <h4 class="webintern_footer_title h5"><small>Hakkımızda</small></h4>
+                                <ul class="webintern-footer-list">
+                                    <li><a href="https://www.youtube.com/channel/UCKJf-d6KWwlVeFthqZ0-tyQ">Youtube</a>
+                                    </li>
+                                    <li><a href="https://twitter.com/_xkadirx_">Twitter</a></li>
+                                    <li><a href="https://www.instagram.com/_xkadirx_/"> İnstagram</a></li>
+                                    <li><a href="https://www.facebook.com/abdulkadir.arslanlar"> Facebook</a></li>
+
+                                </ul>
+                                <div class="empty-space xs-25 sm-25"></div>
+                            </div>
+                            <div class="col-sm-6 col-md-3 footer-4">
+                                <!-- webintern_footer_title -->
+                                <h4 class="webintern_footer_title h5"><small>İlgİlİ</small></h4>
+                                <ul class="webintern-footer-list">
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">Javascript</a></li>
+                                    <li><a href="#">.NET</a></li>
+                                    <li><a href="#">Android</a></li>
+
+                                </ul>
+                                <div class="empty-space xs-25"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-sm-6">
+                                <div class="marg-sm-b30"></div>
+                                <!-- webintern_footer_title -->
+                                <h4 class="webintern_footer_title h5"><small>Haberdar olmak için abone ol</small></h4>
+                                <div class="empty-space marg-lg-b20"></div>
+                                <!--
+                          <div class="simple-text last dark ">
+                          <p>Get latest updates and offers.</p>
+                          </div>
+                          -->
+                                <div class="empty-space marg-lg-b15"></div>
+                                <!-- TT-SUBSCRIBE -->
+                                <form method="post">
+                                    <div class="tt-subscribe">
+                                        <input type="text" required="" placeholder="email adresinizi girin">
+                                        <div class="tt-subscribe-submit">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            <input type="submit" value="">
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="empty-space marg-lg-b30"></div>
+                                <!-- TT-SOCAIL -->
+                                <ul class="tt-socail">
+                                    <li><a href="https://www.facebook.com/abdulkadir.arslanlar"><i
+                                                class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/abdulkadir-arslanlar-4713301a2/"><i
+                                                class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                                    <li><a href="iletişim.html"><i class="far fa-envelope"
+                                                aria-hidden="true"></i></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/_xkadirx_"><i class="fab fa-twitter"
+                                                aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tt-copy">
+                    <div class="container">
+                        <div class="row">
+
+
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="tt-copy-right">
+                                Developed by:Abdulkadir Arslanlar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>
